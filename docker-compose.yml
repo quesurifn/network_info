@@ -5,8 +5,6 @@ services:
     build:
       context: .
     command: -c postgres://network_info:network_info@db:5432/network_info
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
     depends_on:
       - db
 
